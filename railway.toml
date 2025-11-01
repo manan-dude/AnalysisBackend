@@ -1,3 +1,0 @@
-# railway.toml
-[build]
-apt = ["ffmpeg", "libavcodec-dev", "libavformat-dev", "libavdevice-dev", "libavutil-dev", "libavfilter-dev", "libswscale-dev", "libswresample-dev"]
