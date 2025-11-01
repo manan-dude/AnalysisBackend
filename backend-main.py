@@ -1,4 +1,5 @@
 # main.py - FastAPI Backend for AI Analyst Platform
+import uvicorn
 import os
 import json
 import time
@@ -1143,6 +1144,8 @@ async def shutdown_event():
 # =========================================================================
 
 if __name__ == "__main__":
-    import uvicorn
+    
+    # run this app for deploying so it keeps the end points without uvicorn
     logger.info("🎬 Starting server with uvicorn...")
-    uvicorn.run(app,port=8000, log_level="info")
+    uvicorn.run(app,host="0.0.0.0",port=8000, log_level="info")
+    
